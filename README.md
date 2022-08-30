@@ -16,5 +16,9 @@ curl -X POST \
     --data '{"channel":"#test","text":"Hello, Slack!"}' \
 https://slack.com/api/chat.postMessage
 
-export SLACK_BOT_TOKEN="xoxb-3768540680197-3816174709574-BOQbt3yuOk6me2uOvXlUmTUz" python3 scheduled.py 
+export SLACK_BOT_TOKEN="xoxb-3768540680197-3816174709574-BOQbt3yuOk6me2uOvXlUmTUz" 
+ 
+
+test
+python3 scheduled.py 
 -->
