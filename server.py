@@ -26,11 +26,11 @@ def command():
   #   text=commander.getMessage()
   # )
 
-  # # send channel a response
-  # response = slack_client.chat_postMessage(
-  #   channel='#{}'.format(info["channel_name"]), 
-  #   text=commander.getMessage()
-  # )
+  # send channel a response
+  response = slack_client.chat_postMessage(
+    channel='#{}'.format(info["channel_name"]), 
+    text=commander.getMessage()
+  )
 
   try:
     response = slack_client.chat_postMessage(
@@ -49,7 +49,7 @@ if __name__ == "__main__":
   SLACK_BOT_TOKEN = 'xoxb-3768540680197-3816174709574-BOQbt3yuOk6me2uOvXlUmTUz'
   SLACK_SIGNATURE = 'ef07563c6f1e92fb26468bd0aeca0376'
   slack_client = WebClient(SLACK_BOT_TOKEN)
-  verifier = SignatureVerifier(SLACK_SIGNATURE)
+  # verifier = SignatureVerifier(SLACK_SIGNATURE)
 
   commander = Slash("Hey there! It works.")
 
